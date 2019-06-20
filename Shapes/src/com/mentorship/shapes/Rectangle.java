@@ -1,35 +1,19 @@
 package com.mentorship.shapes;
 
-public class Rectangle extends Shape {
-    private double high;
-    private double width;
+public class Rectangle extends Square {
+    private double side1;
 
-    public Rectangle() {
-    }
 
-    public double getHigh() {
-        return high;
-    }
 
-    public void setHigh(double high) {
-        this.high = high;
-    }
 
-    public double getWidth() {
-        return width;
-    }
+    public Rectangle(double side, double side1) {
+        super(side);
+        this.side1 = side1;
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
-    public Rectangle(double high, double width) {
-        this.high = high;
-        this.width = width;
     }
 
     @Override
    public double calculateArea() {
-        return high*width;
+        return side*side1;
     }
 }

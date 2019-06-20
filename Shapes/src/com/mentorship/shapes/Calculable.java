@@ -1,5 +1,5 @@
 package com.mentorship.shapes;
 
-public interface CalculateArea {
+public interface Calculable {
     double calculateArea();
 }

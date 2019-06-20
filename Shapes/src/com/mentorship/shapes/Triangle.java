@@ -1,30 +1,17 @@
 package com.mentorship.shapes;
 
-public class Triangle extends Shape {
-    public Triangle(int side1, int high) {
+public class Triangle extends Square {
+
+    private double side1;
+    private double side2;
+    private double high;
+
+    public Triangle(double side, double side1, double side2, double high) {
+        super(side);
         this.side1 = side1;
+        this.side2 = side2;
         this.high = high;
     }
-
-    public int getSide1() {
-        return side1;
-    }
-
-    public void setSide1(int side1) {
-        this.side1 = side1;
-    }
-
-    public int getHigh() {
-        return high;
-    }
-
-    public void setHigh(int high) {
-        this.high = high;
-    }
-
-    private int side1;
-    private int high;
-
 
     @Override
     public double calculateArea() {

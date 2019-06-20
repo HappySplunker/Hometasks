@@ -1,11 +1,14 @@
 package com.mentorship.shapes;
 
-public class Square extends Rectangle {
-    public Square(int side) {
+public class Square extends Shape {
+    public Square(double side) {
         this.side = side;
     }
 
-    public int getSide() {
+    public Square() {
+    }
+
+    public double getSide() {
         return side;
     }
 
@@ -13,7 +16,7 @@ public class Square extends Rectangle {
         this.side = side;
     }
 
-    private int side;
+    double side;
     public double calculateArea(){
         return side*side;
     }
