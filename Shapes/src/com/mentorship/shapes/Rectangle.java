@@ -22,7 +22,17 @@ public class Rectangle extends Square {
     }
 
     @Override
-   public double calculateArea() {
-        return side*side1;
+    public double calculateArea() {
+        return side * side1;
+    }
+
+    @Override
+    public void printToPDF(){
+        System.out.println("I am rectangle");
+    }
+
+    @Override
+    public void printToCSV() {
+        System.out.println("I am rectangle in CSV");
     }
 }

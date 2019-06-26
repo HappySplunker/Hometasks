@@ -41,7 +41,17 @@ public class Triangle extends Shape {
 
     @Override
     public double calculateArea() {
-        return (side*high)/2;
+        return (side * high) / 2;
+    }
+
+    @Override
+    public void printToPDF() {
+        System.out.println("I am triangle");
+    }
+
+    @Override
+    public void printToCSV() {
+        System.out.println("I am triangle in CSV");
     }
 
 }
